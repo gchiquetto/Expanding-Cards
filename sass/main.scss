@@ -23,10 +23,9 @@ html{
         height: 75vh;
         width: 8rem;
         cursor: pointer;
-        transition: all .2s;
+        transition: all .8s;
 
-
-        &--active{
+        &--active{           
             width: 65%;
         }
     }
