@@ -1,0 +1,46 @@
+*, 
+*::before,
+*::after{
+    marging:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.pictures-container{
+    padding: 8rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+   
+
+    &__box{
+        object-fit: cover; 
+        height: 75vh;
+        width: 8rem;
+        cursor: pointer;
+        transition: all .2s;
+
+
+        &--active{
+            width: 65%;
+        }
+    }
+
+    &__picture{
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 5rem;
+        object-fit: cover;
+
+
+        &:not(:last-child){
+            margin-right: 1vw;
+        }
+    }
+}
